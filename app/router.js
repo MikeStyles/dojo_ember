@@ -1,3 +1,4 @@
+  
 import EmberRouter from '@ember/routing/router';
 import config from 'dojo-ember/config/environment';
 
@@ -7,4 +8,6 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('about', {path: '/about-the-company'});
+  this.route('search');
 });
